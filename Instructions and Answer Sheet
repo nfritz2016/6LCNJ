@@ -35,36 +35,25 @@ Graphical User Interfaces (GUIs) using the Model, View, Controller (MVC) design 
 	1.	 Review the source code posted on the class website. Pay close attention to the MVC classes, which are the Model, StateView, PlaceView, and Controller classes.
 	2.	 Read through the source code of the Model class and note the comments provided in the source code that give hints as to what needs to be done in the program.
 
+	
 	1.	 Declare variables called statePlaceList and selectedPlaceList to hold the information in the model for the application objects being modeled. These variables must be of appropriate types to hold lists of Place information. (See the Place class for details on what information is available for each place.) What data structures will be used for statePlaceList and selectedPlaceList and why?
 	
-	A List of type Place will be used for both statePlaceList and selectedPlaceList
-	I’m not sure why, but I know it get’s rid of the warnings.
-
-
-
+		 ANSWER: A List of type Place will be used for both statePlaceList and selectedPlaceList. I’m not sure why, but I know it get’s rid of the warnings.
 
 
 	1.	 Declare a variable called actionListenerList to hold the information in the model that allows it to be the source for action events. This variable must be of an appropriate type to hold a list of listeners. What data structure will be used for actionListenerList and why?
 
-	     An ArrayList of type ActionListener. Not sure why.
+	     	 ANSWER: An ArrayList of type ActionListener. Not sure why.
 
 
-
-
-
-
-
-	1.	 Complete the Model class by adding a call to its processEvent() method. This method should be called with an ActionEvent that has "Addition to Selected Places" as its command string. Where should processEvent() be called? Why?
+	1.	Complete the Model class by adding a call to its processEvent() method. This method should be called with an ActionEvent that has "Addition to Selected Places" as its command string. Where should processEvent() be called? Why?
 	
-	     processEvent() should be called in addToSelectedList(int index) method to notify the view that a new place was added to the selected place list.
+	   	ANSWER: processEvent() should be called in addToSelectedList(int index) method to notify the view that a new place was added to the selected place list.
+	
 	
 	2.	What arguments should be provided to processEvent()? Why?
 	
-	    A new actionEvent of ACTION_PERFORMED because the action of adding to a list was performed by the addToSelectedList method.
-
-
-
-
+	    	ANSWER: A new actionEvent of ACTION_PERFORMED because the action of adding to a list was performed by the addToSelectedList method.
 
 
 
@@ -72,17 +61,18 @@ Graphical User Interfaces (GUIs) using the Model, View, Controller (MVC) design 
 	1.	 Read through the source code of the StateView class and note the comments provided in the source code that give hints as to what needs to be done in the program.
 
 	1.	 Complete the setModel() method for StateView by registering the view.
-Will the StateView object be a source or a listener in this part of the code? Why?
+		 Will the StateView object be a source or a listener in this part of the code? Why?
+		
+		 ANSWER: 
 
 
 
 
 
+		To which class will the object at the other end of this source/listener connection belong? Why? Will
+		that other object be a source or a listener? Why?
 
-To which class will the object at the other end of this source/listener connection belong? Why? Will
-that other object be a source or a listener? Why?
-
-
+		ANSWER: 
 
 
 
@@ -94,6 +84,7 @@ that other object be a source or a listener? Why?
 
 	1.	Complete the setModel() method for PlaceView by registering the view. Will the PlaceView object be a source or a listener in this part of the code? Why?
 
+		ANSWER: 
 
 
 
@@ -102,14 +93,10 @@ that other object be a source or a listener? Why?
 
 
 
-
-To which class will the object at the other end of this source/listener connection belong? Why? Will
-that other object be a source or a listener? Why?
-
-
-
-
-
+		To which class will the object at the other end of this source/listener connection belong? Why? Will
+		that other object be a source or a listener? Why?
+		
+		ANSWER:
 
 
 
@@ -119,27 +106,26 @@ that other object be a source or a listener? Why?
 
 	1.	 Complete the setView() method for the controller by registering an object of the inner class in the controller. Will this object from the Controller be a source or a listener in this part of the code? Why?
 
+		ANSWER:
+
+
+
+
+
+		To which class will the object at the other end of this source/listener connection belong? Why? Will
+		that other object be a source or a listener? Why?
+
+		ANSWER:
 
 
 
 
 
 
-To which class will the object at the other end of this source/listener connection belong? Why? Will
-that other object be a source or a listener? Why?
 
 
 
-
-
-
-
-
-
-
-
-	1.	 Handle exceptions appropriately using try … catch blocks. Find all methods that throw exceptions (FileNotFoundException, IOException, etc.). List those methods here:
-	2.	
+	1.	 Handle exceptions appropriately using try … catch blocks. Find all methods that throw exceptions (FileNotFoundException, IOException, etc.). List those methods here:	
 
 
 
